@@ -15,9 +15,8 @@
 #define base 0
 #define nav 1
 #define num 2
-#define sym 3
-#define sys 4
-#define lmagic 9
+#define sys 3
+#define lmagic 4
 
 #include "combos.dtsi"  // requires layer aliases
 #include "extra_keys.h"
