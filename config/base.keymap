@@ -10,6 +10,25 @@
     #define _BT_SEL_KEYS_ &trans &trans &trans &trans &trans
 #endif
 
+#include "zmk-helpers/helper.h"
+
+#define base 0
+#define nav 1
+#define num 2
+#define sym 3
+#define sys 4
+#define lmagic 9
+
+#include "combos.dtsi"  // requires layer aliases
+#include "extra_keys.h"
+
+#define XXX &none
+#define ___ &trans
+
+/* Global settings */
+
+#define QUICK_TAP_MS 175
+
 /* Glove80 system behavior & macros */
 
 / {
@@ -143,25 +162,6 @@
 };
 
 /* Glove80 system behavior & macros end */
-
-#include "zmk-helpers/helper.h"
-
-#define base 0
-#define nav 1
-#define num 2
-#define sym 3
-#define sys 4
-#define lmagic 9
-
-#include "combos.dtsi"  // requires layer aliases
-#include "extra_keys.h"
-
-#define XXX &none
-#define ___ &trans
-
-/* Global settings */
-
-#define QUICK_TAP_MS 175
 
 /* Homerow mods */
 
