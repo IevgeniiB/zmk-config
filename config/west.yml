@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: moergo-sc # Use moergo zmk fork for full glove80 support
+      url-base: https://github.com/moergo-sc
+    - name: urob
+      url-base: https://github.com/urob
+  projects:
+    - name: zmk
+      remote: moergo-sc
+      revision: main
+      import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: v2 # this will eventually become main
+  self:
+    path: config

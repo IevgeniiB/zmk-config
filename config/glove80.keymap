@@ -1,0 +1,45 @@
+/* source key position labels */
+#include "zmk-helpers/key-labels/glove80.h"
+
+/* map the Glove's extra keys */
+#define X_LT  \
+                &kp C_BRI_DN          &kp C_BRI_UP  &kp C_PREV   &kp C_NEXT   &kp C_PP                                                                                &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP  XXX          &kp PAUSE_BREAK \
+                &kp EQUAL             &kp N1        &kp N2       &kp N3       &kp N4       &kp N5                                                         &kp N6      &kp N7       &kp N8        &kp N9        &kp N0       &kp MINUS       \
+                &kp TAB
+#define X_RT    &kp BACKSLASH
+
+#define X_LM    &kp ESC
+#define X_RM    &kp SQT
+
+#define X_LB    &none
+#define X_MB    &none &none &none       &none &none &none
+#define X_RB    &none
+
+#define X_LH    &magic lmagic 0 &none &none &kp LEFT &kp RIGHT
+#define X_MH    &none &none
+#define X_RH    &kp UP &kp DOWN &none &none &none
+
+/* activate bluetooth */
+#define CONFIG_WIRELESS 1
+
+/* source the main keymap */
+#include "base.keymap"
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        lmagic {
+            bindings = <
+ &bt BT_CLR   XXX              XXX              XXX              XXX                                                                                    XXX   XXX   XXX   XXX  &bt BT_CLR_ALL
+ XXX          XXX              XXX              XXX              XXX              XXX                                                             XXX   XXX   XXX   XXX   XXX  XXX
+ XXX          &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                 XXX   XXX   XXX   XXX   XXX  XXX
+ &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                 XXX   XXX   XXX   XXX   XXX  &bootloader
+ &sys_reset   XXX              XXX              XXX              XXX              XXX              &bt_2   &bt_3  XXX           XXX   XXX   XXX   XXX   XXX   XXX   XXX   XXX  &sys_reset
+ XXX          XXX              XXX              XXX              XXX                               &bt_0   &bt_1  &out OUT_USB  XXX   XXX   XXX         XXX   XXX   XXX   XXX  XXX
+            >;
+        };
+    };
+};
+
