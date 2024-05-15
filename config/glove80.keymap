@@ -17,7 +17,7 @@
 
 #define X_LH    &magic lmagic 0 &none &none &kp LEFT &kp RIGHT
 #define X_MH    &none &none
-#define X_RH    &kp UP &kp DOWN &none &none &none
+#define X_RH    &kp DOWN &kp UP &none &none &none
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
