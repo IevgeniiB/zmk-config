@@ -12,7 +12,7 @@
 #define X_RM    &kp SQT
 
 #define X_LB    &none
-#define X_MB    &kp LSHFT &kp LCTRL &none       &none &none &none
+#define X_MB    &kp LSHFT &kp LCTRL &none       &none &none &smart_shft
 #define X_RB    &none
 
 #define X_LH    &magic lmagic 0 &none &none &kp LEFT &kp RIGHT
