@@ -32,12 +32,12 @@
 
         lmagic {
             bindings = <
- &bt BT_CLR   XXX              XXX              XXX              XXX                                                                                    XXX   XXX   XXX   XXX  &bt BT_CLR_ALL
- XXX          XXX              XXX              XXX              XXX              XXX                                                             XXX   XXX   XXX   XXX   XXX  XXX
- XXX          &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                 XXX   XXX   XXX   XXX   XXX  XXX
- &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                 XXX   XXX   XXX   XXX   XXX  &bootloader
- &sys_reset   XXX              XXX              XXX              XXX              XXX              &bt_2   &bt_3  XXX           XXX   XXX   XXX   XXX   XXX   XXX   XXX   XXX  &sys_reset
- XXX          XXX              XXX              XXX              XXX                               &bt_0   &bt_1  &out OUT_USB  XXX   XXX   XXX         XXX   XXX   XXX   XXX  XXX
+ &bt BT_CLR     XXX              XXX              XXX              XXX                                                                                    XXX   XXX   XXX   XXX  &bt BT_CLR_ALL
+ XXX            XXX              XXX              XXX              XXX              XXX                                                             XXX   XXX   XXX   XXX   XXX  XXX
+ &studio_unlock &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                 XXX   XXX   XXX   XXX   XXX  XXX
+ &bootloader    &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                 XXX   XXX   XXX   XXX   XXX  &bootloader
+ &sys_reset     XXX              XXX              XXX              XXX              XXX              &bt_2   &bt_3  XXX           XXX   XXX   XXX   XXX   XXX   XXX   XXX   XXX  &sys_reset
+ XXX            XXX              XXX              XXX              XXX                               &bt_0   &bt_1  &out OUT_USB  XXX   XXX   XXX         XXX   XXX   XXX   XXX  XXX
             >;
         };
     };
