@@ -1,0 +1,4 @@
+# Drawing-only snapshot of main's resolved dependencies on 2026-10-05.
+# This does not select the firmware built by config/west.yml.
+zmk: ce69e85f585c724142aae37ddf8a7e019ff19e93
+zmk-helpers: a98b7f7e4a5130a5150dce81bb8aa419fc3ca3c0

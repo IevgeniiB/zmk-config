@@ -1,0 +1,675 @@
+layers:
+  Base:
+  - BRI DN
+  - BRI UP
+  - PREV
+  - NEXT
+  - PP
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - ''
+  - PAUSE BREAK
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - \
+  - ESC
+  - t: A
+    h: Shift
+  - t: R
+    h: Ctrl
+  - t: S
+    h: Alt
+  - t: T
+    h: Gui
+  - G
+  - M
+  - t: N
+    h: Gui
+  - t: E
+    h: Alt
+  - t: I
+    h: Ctrl
+  - t: O
+    h: Shift
+  - ''''
+  - ''
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - Shift
+  - Ctrl
+  - ''
+  - ''
+  - ''
+  - t: Shift
+    s: Caps Word
+  - K
+  - H
+  - t: ','
+    h: 'C+S: <'
+    s: ;
+  - t: .
+    h: 'C+S: >'
+    s: ':'
+  - t: '?'
+    s: '!'
+  - ''
+  - t: RGB status
+    h: Magic
+  - ''
+  - ''
+  - ←
+  - →
+  - t: Space
+    h: Num
+  - Sys
+  - ''
+  - ''
+  - t: Shift
+    s: Caps Word
+  - Nav
+  - ↓
+  - ↑
+  - ''
+  - ''
+  - ''
+  Nav:
+  - BRI DN
+  - BRI UP
+  - PREV
+  - NEXT
+  - PP
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - ''
+  - PAUSE BREAK
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - t: ▽
+    type: trans
+  - \
+  - ESC
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - t: ▽
+    type: trans
+  - ←
+  - ↓
+  - ↑
+  - →
+  - t: ▽
+    type: trans
+  - ''''
+  - ''
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Ctl+Sft+PG UP
+  - Ctl+Sft+PG DN
+  - t: ▽
+    type: trans
+  - Shift
+  - Ctrl
+  - ''
+  - ''
+  - ''
+  - t: Shift
+    s: Caps Word
+  - t: ▽
+    type: trans
+  - Gui+Sft+[
+  - Gui+Sft+]
+  - Gui+[
+  - Gui+]
+  - ''
+  - t: RGB status
+    h: Magic
+  - ''
+  - ''
+  - ←
+  - →
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - ''
+  - ''
+  - t: ▽
+    type: trans
+  - type: held
+  - ↓
+  - ↑
+  - ''
+  - ''
+  - ''
+  Num:
+  - BRI DN
+  - BRI UP
+  - PREV
+  - NEXT
+  - PP
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - ''
+  - PAUSE BREAK
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - '['
+  - ']'
+  - t: (
+    s: <
+  - t: )
+    s: '>'
+  - '{'
+  - '='
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - \
+  - ESC
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - '}'
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - t: ','
+    h: 'C+S: <'
+    s: ;
+  - ''''
+  - ''
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Shift
+  - Ctrl
+  - ''
+  - ''
+  - ''
+  - t: Shift
+    s: Caps Word
+  - /
+  - '1'
+  - '2'
+  - '3'
+  - t: .
+    h: 'C+S: >'
+    s: ':'
+  - ''
+  - t: RGB status
+    h: Magic
+  - ''
+  - ''
+  - ←
+  - →
+  - type: held
+  - t: ▽
+    type: trans
+  - ''
+  - ''
+  - '-'
+  - +
+  - ↓
+  - ↑
+  - ''
+  - ''
+  - ''
+  Sys:
+  - BRI DN
+  - BRI UP
+  - PREV
+  - NEXT
+  - PP
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - ''
+  - PAUSE BREAK
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - t: BT
+    h: '0'
+  - t: BT
+    h: '1'
+  - t: BT
+    h: '2'
+  - t: BT
+    h: '3'
+  - BT CLR
+  - t: ▽
+    type: trans
+  - VOL DN
+  - VOL UP
+  - MUTE
+  - t: ▽
+    type: trans
+  - \
+  - ESC
+  - OUT USB
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Boot
+  - Boot
+  - PREV
+  - NEXT
+  - PP
+  - t: ▽
+    type: trans
+  - ''''
+  - ''
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Reset
+  - Shift
+  - Ctrl
+  - ''
+  - ''
+  - ''
+  - t: Shift
+    s: Caps Word
+  - Reset
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - ''
+  - t: RGB status
+    h: Magic
+  - ''
+  - ''
+  - ←
+  - →
+  - t: ▽
+    type: trans
+  - type: held
+  - ''
+  - ''
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - ↓
+  - ↑
+  - ''
+  - ''
+  - ''
+  Magic:
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Studio unlock
+  - RGB SPI
+  - RGB SAI
+  - RGB HUI
+  - RGB BRI
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - RGB SPD
+  - RGB SAD
+  - RGB HUD
+  - RGB BRD
+  - RGB EFF
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - t: BLE 2
+    h: '2x: disc'
+  - t: BLE 3
+    h: '2x: disc'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - t: BLE 0
+    h: '2x: disc'
+  - t: BLE 1
+    h: '2x: disc'
+  - OUT USB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+combos:
+- p:
+  - 24
+  - 25
+  k: ESC
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 26
+  - 27
+  k: BSPC
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 24
+  - 36
+  k: '@'
+  l:
+  - Base
+- p:
+  - 25
+  - 37
+  k: '#'
+  l:
+  - Base
+  - Num
+- p:
+  - 26
+  - 38
+  k: $
+  l:
+  - Base
+  - Num
+- p:
+  - 27
+  - 39
+  k: '%'
+  l:
+  - Base
+  - Num
+- p:
+  - 36
+  - 37
+  k: TAB
+  l:
+  - Base
+  - Num
+- p:
+  - 38
+  - 39
+  k: ENTER
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 36
+  - 48
+  k: '`'
+  l:
+  - Base
+- p:
+  - 37
+  - 49
+  k: \
+  l:
+  - Base
+- p:
+  - 38
+  - 50
+  k: '='
+  l:
+  - Base
+  - Num
+- p:
+  - 39
+  - 51
+  k: '~'
+  l:
+  - Base
+- p:
+  - 47
+  - 48
+  k: Gui+X
+  l:
+  - Base
+- p:
+  - 48
+  - 49
+  k: Gui+C
+  l:
+  - Base
+- p:
+  - 50
+  - 51
+  k: Gui+V
+  l:
+  - Base
+- p:
+  - 28
+  - 29
+  k: BSPC
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 30
+  - 31
+  k: DEL
+  l:
+  - Base
+- p:
+  - 28
+  - 40
+  k: ^
+  l:
+  - Base
+- p:
+  - 29
+  - 41
+  k: +
+  l:
+  - Base
+  - Num
+- p:
+  - 30
+  - 42
+  k: '*'
+  l:
+  - Base
+  - Num
+- p:
+  - 31
+  - 43
+  k: '&'
+  l:
+  - Base
+  - Num
+- p:
+  - 40
+  - 41
+  k: ENTER
+  l:
+  - Base
+  - Num
+- p:
+  - 40
+  - 58
+  k: _
+  l:
+  - Base
+- p:
+  - 41
+  - 59
+  k: '-'
+  l:
+  - Base
+  - Num
+- p:
+  - 42
+  - 60
+  k: /
+  l:
+  - Base
+  - Num
+- p:
+  - 43
+  - 61
+  k: '|'
+  l:
+  - Base
+- p:
+  - 38
+  - 41
+  k: Hyper+O
+  l:
+  - Base
+- p:
+  - 50
+  - 59
+  k: Hyper+S
+  l:
+  - Base
+- p:
+  - 73
+  - 72
+  k: Sys
+  l:
+  - Base
