@@ -3,3 +3,5 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@edf5c0814fd3ea202e43aad2d68fd32e882a518c # official v0.3.0; compatible with stable MoErgo/Zephyr
+    with:
+      archive_name: stable-firmware

@@ -7,12 +7,17 @@
 ---
 include:
   - board: glove80_lh
+    artifact-name: stable-glove80-left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: glove80_rh
+    artifact-name: stable-glove80-right
   - board: nice_nano_v2
+    artifact-name: stable-urchin-left
     shield: urchin_left nice_view_adapter  nice_view
   - board: nice_nano_v2
+    artifact-name: stable-urchin-right
     shield: urchin_right nice_view_adapter nice_view
   - board: nice_nano_v2
+    artifact-name: stable-settings-reset
     shield: settings_reset

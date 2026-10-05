@@ -1,0 +1,34 @@
+# Experimental official ZMK main snapshot, 2026-10-05; not the stable manifest.
+manifest:
+  projects:
+  - name: zmk
+    url: https://github.com/zmkfirmware/zmk
+    revision: 5b51501fead672c41b5cfb396f3dafe0894bf4e9
+    import: app/west.yml
+  - name: zmk-helpers
+    url: https://github.com/urob/zmk-helpers
+    revision: a98b7f7e4a5130a5150dce81bb8aa419fc3ca3c0
+  - name: zephyr
+    revision: 10ba6d0cb38bc3d258775d27982f707599320085
+    import:
+      name-blocklist:
+      - ci-tools
+      - hal_altera
+      - hal_cypress
+      - hal_infineon
+      - hal_microchip
+      - hal_nxp
+      - hal_openisa
+      - hal_xtensa
+      - hal_st
+      - hal_ti
+      - loramac-node
+      - mcuboot
+      - mcumgr
+      - net-tools
+      - openthread
+      - edtt
+      - trusted-firmware-m
+    url: https://github.com/zmkfirmware/zephyr
+  self:
+    path: experimental

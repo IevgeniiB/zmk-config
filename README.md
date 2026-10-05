@@ -74,3 +74,10 @@ unchanged main keymap, plus deterministic regeneration and negative checks for
 stale output and a same-length binding change. Browser previews were inspected.
 Hardware testing is not implied. This drawings change does not modify firmware
 sources, board settings, timing, build targets or the firmware build workflow.
+
+## Firmware tracks
+
+[Stable and experimental firmware](docs/firmware-tracks.md) documents the separate
+MoErgo stable and official-ZMK Urchin experiment, their downloads, validation and
+rollback paths. Both use this shared layout. The experiment is not promoted to
+stable without hardware feedback.
