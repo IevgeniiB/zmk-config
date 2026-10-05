@@ -1,0 +1,8 @@
+# Official ZMK experiment: Urchin only, with the Zephyr 4.1 board identifier.
+include:
+  - board: nice_nano@2.0.0//zmk
+    shield: urchin_left nice_view_adapter nice_view
+    artifact-name: experimental-urchin-left
+  - board: nice_nano@2.0.0//zmk
+    shield: urchin_right nice_view_adapter nice_view
+    artifact-name: experimental-urchin-right

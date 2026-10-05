@@ -22,6 +22,8 @@
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
 
+#define GLOVE80_VENDOR_FEATURES 1
+
 /* source the main keymap */
 #include "base.keymap"
 

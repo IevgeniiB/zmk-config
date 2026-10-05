@@ -1,0 +1,9 @@
+name: Experimental Urchin firmware
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  experimental:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@5b51501fead672c41b5cfb396f3dafe0894bf4e9 # official main snapshot, 2026-10-05
+    with:
+      config_path: experimental
+      build_matrix_path: build-experimental.yaml
+      archive_name: experimental-urchin-firmware

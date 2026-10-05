@@ -23,6 +23,7 @@ def bindings(dt, prop):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--track', choices=['stable', 'experimental'], default='stable')
     parser.add_argument('--workspace', type=Path, required=True)
     parser.add_argument('--build-root', type=Path, required=True)
     args = parser.parse_args()
@@ -31,6 +32,8 @@ def main():
     from devicetree.dtlib import DT
     targets = [('glove80', 'glove80_lh-firmware'), ('glove80', 'glove80_rh-firmware'),
                ('urchin', 'nice_nano_v2-urchin_left'), ('urchin', 'nice_nano_v2-urchin_right')]
+    if args.track == 'experimental':
+        targets = [('urchin', 'nice_nano@2.0.0__zmk-urchin_left'), ('urchin', 'nice_nano@2.0.0__zmk-urchin_right')]
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         cfg = tmp / 'config.yaml'
