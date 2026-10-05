@@ -2,4 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@5b51501fead672c41b5cfb396f3dafe0894bf4e9 # upstream main, audited 2026-10-05
+    uses: moergo-sc/zmk/.github/workflows/build-user-config.yml@ce69e85f585c724142aae37ddf8a7e019ff19e93 # MoErgo v26.09; matches firmware/Zephyr

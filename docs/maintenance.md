@@ -21,7 +21,7 @@ scheduled trigger or final-release publishing step.
 | [MoErgo ZMK](https://github.com/moergo-sc/zmk) | `main`, resolving to `v26.09` | `ce69e85f585c724142aae37ddf8a7e019ff19e93` |
 | [zmk-helpers](https://github.com/urob/zmk-helpers) | `v2` | `a98b7f7e4a5130a5150dce81bb8aa419fc3ca3c0` |
 | [Zephyr fork](https://github.com/zmkfirmware/zephyr) | `v3.5.0+zmk-fixes` | `dacab4875df72109b96cc8977547a0dc04875bcd` |
-| [ZMK reusable build workflow](https://github.com/zmkfirmware/zmk/blob/5b51501fead672c41b5cfb396f3dafe0894bf4e9/.github/workflows/build-user-config.yml) | `main` | `5b51501fead672c41b5cfb396f3dafe0894bf4e9` |
+| [MoErgo reusable build workflow](https://github.com/moergo-sc/zmk/blob/ce69e85f585c724142aae37ddf8a7e019ff19e93/.github/workflows/build-user-config.yml) | upstream ZMK `main` | `ce69e85f585c724142aae37ddf8a7e019ff19e93` |
 
 MoErgo's [v26.09 release](https://github.com/moergo-sc/zmk/releases/tag/v26.09)
 was published October 1 and includes the upstream input-report deadlock fix.
@@ -69,7 +69,9 @@ is enabled in this PR.
    physical-layout definition. Require hardware feedback for timing, Bluetooth,
    sleep, displays and Studio behavior before considering them validated.
 
-Do not merge, flash hardware, or publish a final release as part of this audit.
+The initial audit was draft-only. The owner subsequently authorized merging
+passing maintenance changes and publishing firmware releases. Never flash
+hardware automatically; seek feedback before significant typing experiments.
 Source pins improve repeatability; the cloud's mutable container/actions and
 unverified hardware behavior remain explicit limitations.
 
@@ -91,3 +93,24 @@ warnings upstream before relying on a reset image on hardware.
 Hardware flashing, Bluetooth/display/sleep/Studio behavior and typing feel are
 unrun. GitHub Actions results must be checked on the draft PR; local builds do not
 prove that the upstream cloud container and actions will execute successfully.
+
+## Cloud workflow compatibility correction
+
+The first cloud run compiled Glove80 successfully, then failed in upstream ZMK's
+new board-compatibility check: `west boards --format "{qualifiers}"` raises
+`KeyError: 'qualifiers'` in this MoErgo/Zephyr version. Evidence:
+[failed job](https://github.com/IevgeniiB/zmk-config/actions/runs/37314122213/job/111776524084).
+The reusable workflow now comes from the same MoErgo v26.09 commit as the firmware.
+This retains the fork's compatible build process instead of altering board
+configuration to satisfy a newer upstream check.
+
+## Publishing an authorized firmware release
+
+After all checks pass on the exact proposed commit, merge the maintenance PR.
+Push a `firmware-*` tag on the verified merged commit (for example
+`firmware-2026-10-05-v26.09`). The release workflow rebuilds all five targets at
+that tag and publishes only after every build succeeds. It verifies all expected
+UF2 filenames, includes SHA-256 checksums, source pins and keymap diagrams, and
+marks hardware validation as unrun in the release notes. Settings-reset firmware
+is explicitly identified as a destructive settings-reset utility. No workflow
+flashes a keyboard. No recurring automation is added.

@@ -6,3 +6,5 @@ build/
 .venv*/
 .draw-deps/
 __pycache__/
+release-assets/
+release-notes.md

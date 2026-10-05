@@ -102,7 +102,7 @@ configuration via the supplied build runner.
 
 See [the baseline audit and maintenance scope](docs/maintenance.md). Firmware,
 helpers, Zephyr and the reusable build workflow now use exact commits. This
-pins sources, not the whole cloud execution environment: the upstream workflow
+pins sources, not the whole cloud execution environment: the MoErgo workflow
 still references mutable action tags and a `stable` container image. Local and
 cloud builds are therefore not claimed to be bit-for-bit identical.
 
@@ -111,3 +111,6 @@ MoErgo compatibility must be retained for Glove80. Do not copy another person's
 layout wholesale; verify a proposed behavior against this layout and describe
 its tradeoffs before hardware testing. The first maintenance change does not
 alter any key binding, combo, timing, or board configuration.
+
+Authorized releases use `firmware-*` tags after a validated merge; see the
+[publishing procedure](docs/maintenance.md#publishing-an-authorized-firmware-release).
