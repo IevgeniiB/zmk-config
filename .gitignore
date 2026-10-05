@@ -5,3 +5,6 @@
 .venv-draw/
 .draw-deps/
 __pycache__/
+
+# Local build results
+build/
