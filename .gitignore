@@ -1,2 +1,7 @@
 *~
 .idea/
+
+# Local keymap drawing dependencies
+.venv-draw/
+.draw-deps/
+__pycache__/

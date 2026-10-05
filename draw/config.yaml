@@ -1,0 +1,40 @@
+# Display overrides only: firmware bindings remain in config/*.keymap.
+parse_config:
+  raw_binding_map:
+    '&comma_morph': {t: ',', s: ';', h: 'C+S: <'}
+    '&dot_morph': {t: '.', s: ':', h: 'C+S: >'}
+    '&qexcl': {t: '?', s: '!'}
+    '&lpar_lt': {t: '(', s: '<'}
+    '&rpar_gt': {t: ')', s: '>'}
+    '&smart_shft': {t: Shift, s: Caps Word}
+    '&magic 4 0': {t: RGB status, h: Magic}
+    '&bt_0': {t: 'BLE 0', h: '2x: disc'}
+    '&bt_1': {t: 'BLE 1', h: '2x: disc'}
+    '&bt_2': {t: 'BLE 2', h: '2x: disc'}
+    '&bt_3': {t: 'BLE 3', h: '2x: disc'}
+    '&studio_unlock': Studio unlock
+    '&bootloader': Boot
+    '&sys_reset': Reset
+  trans_legend: {t: '▽', type: trans}
+  zmk_keycode_map:
+    LSHFT: Shift
+    RSHFT: Shift
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    RALT: Alt
+    LGUI: Gui
+    RGUI: Gui
+    SPACE: Space
+    LEFT: '←'
+    RIGHT: '→'
+    UP: '↑'
+    DOWN: '↓'
+draw_config:
+  key_w: 72
+  key_h: 64
+  small_pad: 3
+  combo_w: 42
+  combo_h: 26
+  separate_combo_diagrams: true
+  footer_text: 'Generated from config/*.keymap • IevgeniiB/zmk-config'

@@ -1,0 +1,398 @@
+layers:
+  Base:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - t: A
+    h: Shift
+  - t: R
+    h: Ctrl
+  - t: S
+    h: Alt
+  - t: T
+    h: Gui
+  - G
+  - M
+  - t: N
+    h: Gui
+  - t: E
+    h: Alt
+  - t: I
+    h: Ctrl
+  - t: O
+    h: Shift
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - t: ','
+    h: 'C+S: <'
+    s: ;
+  - t: .
+    h: 'C+S: >'
+    s: ':'
+  - t: '?'
+    s: '!'
+  - t: Space
+    h: Num
+  - Sys
+  - t: Shift
+    s: Caps Word
+  - Nav
+  Nav:
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - t: ▽
+    type: trans
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - t: ▽
+    type: trans
+  - ←
+  - ↓
+  - ↑
+  - →
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Ctl+Sft+PG UP
+  - Ctl+Sft+PG DN
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Gui+Sft+[
+  - Gui+Sft+]
+  - Gui+[
+  - Gui+]
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - type: held
+  Num:
+  - '['
+  - ']'
+  - t: (
+    s: <
+  - t: )
+    s: '>'
+  - '{'
+  - '='
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - '}'
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - t: ','
+    h: 'C+S: <'
+    s: ;
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - /
+  - '1'
+  - '2'
+  - '3'
+  - t: .
+    h: 'C+S: >'
+    s: ':'
+  - type: held
+  - t: ▽
+    type: trans
+  - '-'
+  - +
+  Sys:
+  - t: BT
+    h: '0'
+  - t: BT
+    h: '1'
+  - t: BT
+    h: '2'
+  - t: BT
+    h: '3'
+  - BT CLR
+  - t: ▽
+    type: trans
+  - VOL DN
+  - VOL UP
+  - MUTE
+  - t: ▽
+    type: trans
+  - OUT USB
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Boot
+  - Boot
+  - PREV
+  - NEXT
+  - PP
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - Reset
+  - Reset
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+  - type: held
+  - t: ▽
+    type: trans
+  - t: ▽
+    type: trans
+combos:
+- p:
+  - 1
+  - 2
+  k: ESC
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 3
+  - 4
+  k: BSPC
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 1
+  - 11
+  k: '@'
+  l:
+  - Base
+- p:
+  - 2
+  - 12
+  k: '#'
+  l:
+  - Base
+  - Num
+- p:
+  - 3
+  - 13
+  k: $
+  l:
+  - Base
+  - Num
+- p:
+  - 4
+  - 14
+  k: '%'
+  l:
+  - Base
+  - Num
+- p:
+  - 11
+  - 12
+  k: TAB
+  l:
+  - Base
+  - Num
+- p:
+  - 13
+  - 14
+  k: ENTER
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 11
+  - 21
+  k: '`'
+  l:
+  - Base
+- p:
+  - 12
+  - 22
+  k: \
+  l:
+  - Base
+- p:
+  - 13
+  - 23
+  k: '='
+  l:
+  - Base
+  - Num
+- p:
+  - 14
+  - 24
+  k: '~'
+  l:
+  - Base
+- p:
+  - 20
+  - 21
+  k: Gui+X
+  l:
+  - Base
+- p:
+  - 21
+  - 22
+  k: Gui+C
+  l:
+  - Base
+- p:
+  - 23
+  - 24
+  k: Gui+V
+  l:
+  - Base
+- p:
+  - 5
+  - 6
+  k: BSPC
+  l:
+  - Base
+  - Nav
+  - Num
+- p:
+  - 7
+  - 8
+  k: DEL
+  l:
+  - Base
+- p:
+  - 5
+  - 15
+  k: ^
+  l:
+  - Base
+- p:
+  - 6
+  - 16
+  k: +
+  l:
+  - Base
+  - Num
+- p:
+  - 7
+  - 17
+  k: '*'
+  l:
+  - Base
+  - Num
+- p:
+  - 8
+  - 18
+  k: '&'
+  l:
+  - Base
+  - Num
+- p:
+  - 15
+  - 16
+  k: ENTER
+  l:
+  - Base
+  - Num
+- p:
+  - 15
+  - 25
+  k: _
+  l:
+  - Base
+- p:
+  - 16
+  - 26
+  k: '-'
+  l:
+  - Base
+  - Num
+- p:
+  - 17
+  - 27
+  k: /
+  l:
+  - Base
+  - Num
+- p:
+  - 18
+  - 28
+  k: '|'
+  l:
+  - Base
+- p:
+  - 13
+  - 16
+  k: Hyper+O
+  l:
+  - Base
+- p:
+  - 23
+  - 26
+  k: Hyper+S
+  l:
+  - Base
+- p:
+  - 33
+  - 32
+  k: Sys
+  l:
+  - Base
