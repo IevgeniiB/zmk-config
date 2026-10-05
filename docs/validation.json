@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-05",
+  "config_baseline": "64df484",
+  "firmware": "ce69e85f585c724142aae37ddf8a7e019ff19e93",
+  "helpers": "a98b7f7e4a5130a5150dce81bb8aa419fc3ca3c0",
+  "zephyr": "dacab4875df72109b96cc8977547a0dc04875bcd",
+  "toolchain": {
+    "zephyr_sdk": "0.16.8",
+    "west": "1.5.0",
+    "cmake": "3.31.6",
+    "ninja": "1.13.2",
+    "python": "3.12"
+  },
+  "builds": [
+    {
+      "target": "glove80_lh-firmware",
+      "passed": true,
+      "exit_code": 0,
+      "sha256": "3bc76759f16c0a4391656ec42530297069ff188ea997057d2f43cffe0a74de40"
+    },
+    {
+      "target": "glove80_rh-firmware",
+      "passed": true,
+      "exit_code": 0,
+      "sha256": "6f82a6b588b49ad277f5531562bf221ecbf46753f3e13a9d63dbb768e7940b1d"
+    },
+    {
+      "target": "nice_nano_v2-urchin_left",
+      "passed": true,
+      "exit_code": 0,
+      "sha256": "264b00a5dfc4a4fd2ebea6793c1ce1ee15dadf3b1c8be0231e0b32dc853462f3"
+    },
+    {
+      "target": "nice_nano_v2-urchin_right",
+      "passed": true,
+      "exit_code": 0,
+      "sha256": "d3f221a163dad349f8e8a8598d6b965cdc3e55e5af40c406585b0cc4c89dc053"
+    },
+    {
+      "target": "nice_nano_v2-settings_reset",
+      "passed": true,
+      "exit_code": 0,
+      "sha256": "fd3072a56b359a56b08ad0c010b77ebe516846fc59ca21aa5c1059518a082d60"
+    }
+  ],
+  "checks": {
+    "compiled_keymap_equivalence": "passed: all bindings, numeric arguments, combo bindings/positions/scopes on four halves",
+    "stale_generation_negative_test": "passed",
+    "same_length_binding_change_negative_test": "passed",
+    "hardware": "unrun",
+    "github_actions": "pending"
+  }
+}

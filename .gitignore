@@ -1,2 +1,8 @@
 *~
 .idea/
+
+# Local validation and rendering dependencies
+build/
+.venv*/
+.draw-deps/
+__pycache__/
