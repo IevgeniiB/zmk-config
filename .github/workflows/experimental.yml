@@ -1,6 +1,22 @@
 name: Experimental Urchin firmware
 on: [push, pull_request, workflow_dispatch]
 jobs:
+  combo-regression:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    container:
+      image: docker.io/zmkfirmware/zmk-build-arm:4.1
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Initialize pinned experimental sources
+        run: |
+          west init -l experimental
+          west update --fetch-opt=--filter=tree:0
+          west zephyr-export
+      - name: Run upstream combo regression suite
+        working-directory: zmk/app
+        run: ./run-test.sh tests/combo
   experimental:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@5b51501fead672c41b5cfb396f3dafe0894bf4e9 # official main snapshot, 2026-10-05
     with:
