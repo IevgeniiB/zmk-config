@@ -7,7 +7,7 @@ features and hardware behavior have been reviewed separately.
 
 | | Stable | Experimental |
 | --- | --- | --- |
-| ZMK source | MoErgo v26.09 (`ce69e85f…`) | Official main snapshot (`5b51501f…`, 2026-10-05) |
+| ZMK source | MoErgo v26.09 (`ce69e85f…`) | Official main snapshot (`bb2d711d…`, 2026-11-14) |
 | Zephyr | `dacab487…`, 3.5 fork | `10ba6d0c…`, 4.1 fork |
 | Manifest | `config/west.yml` | `experimental/west.yml` |
 | Matrix | `build.yaml` (five targets) | `build-experimental.yaml` (two Urchin halves) |
@@ -24,6 +24,32 @@ hardware feedback.** No workflow automatically flashes, promotes, or publishes a
 final firmware release.
 
 ## Portable keymap
+
+### Experimental snapshot: 2026-11-14
+
+The experimental firmware pin includes upstream
+[combo timeout rescheduling fix #3514](https://github.com/zmkfirmware/zmk/commit/6a7590c1157480c96fa82340f1f6baef169e3116).
+It replaces `k_work_schedule` with `k_work_reschedule` when the earliest combo
+deadline changes while a timer is pending. The upstream regression combines
+10 ms and 200 ms candidates, including a three-key combo, and checks that the
+completed two-key combo resolves without another key event.
+
+Our 29 combos all use two keys, with overlapping candidates and 50/80/100 ms
+timeouts. The upstream three-key failure is therefore not a demonstrated
+failure of this layout. This update tests the corrected engine without changing
+our bindings, timeout values or prior-idle requirements. Combo handling is
+compiled when the devicetree contains enabled `zmk,combos`; this is not a new
+timer Kconfig option. CI runs the upstream native-simulation combo suite using
+the experimental manifest, independently of stable firmware.
+
+Compared with the previous experimental pin, the snapshot also makes behavior
+configuration (including tap-dance bindings) const, corrects the Bluetooth
+Device Information vendor-ID namespace to USB IF, adds an unused RP2040 board
+variant, and updates documentation dependencies. Zephyr and helpers pins and
+the compatible reusable build workflow remain unchanged. The firmware source
+pin and workflow source pin intentionally differ. Stable sources and Glove80
+Magic behavior are unchanged. Hardware testing and promotion remain gated on
+user feedback.
 
 `config/base.keymap` contains the common behavior and layout. The Glove80 adapter
 opts into `config/glove80-behaviors.dtsi`; that file contains the existing MoErgo

@@ -1,9 +1,9 @@
-# Experimental official ZMK main snapshot, 2026-10-05; not the stable manifest.
+# Experimental official ZMK main snapshot, 2026-11-14; not the stable manifest.
 manifest:
   projects:
   - name: zmk
     url: https://github.com/zmkfirmware/zmk
-    revision: 5b51501fead672c41b5cfb396f3dafe0894bf4e9
+    revision: bb2d711d192f3cca83dff69fe1fc5119418a0102
     import: app/west.yml
   - name: zmk-helpers
     url: https://github.com/urob/zmk-helpers
