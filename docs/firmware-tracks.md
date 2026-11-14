@@ -23,9 +23,7 @@ validation. **Do not promote experimental firmware to stable without user
 hardware feedback.** No workflow automatically flashes, promotes, or publishes a
 final firmware release.
 
-## Portable keymap
-
-### Experimental snapshot: 2026-11-14
+## Experimental snapshot: 2026-11-14
 
 The experimental firmware pin includes upstream
 [combo timeout rescheduling fix #3514](https://github.com/zmkfirmware/zmk/commit/6a7590c1157480c96fa82340f1f6baef169e3116).
@@ -50,6 +48,8 @@ the compatible reusable build workflow remain unchanged. The firmware source
 pin and workflow source pin intentionally differ. Stable sources and Glove80
 Magic behavior are unchanged. Hardware testing and promotion remain gated on
 user feedback.
+
+## Portable keymap
 
 `config/base.keymap` contains the common behavior and layout. The Glove80 adapter
 opts into `config/glove80-behaviors.dtsi`; that file contains the existing MoErgo
